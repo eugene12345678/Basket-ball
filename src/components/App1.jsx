@@ -69,9 +69,9 @@ const App1 = () => {
       .then(data => {
         setMyTeam(prevTeam => [...prevTeam, data]);
       })
-      .catch(error => {
-        setError(error.message);
-      });
+      // .catch(error => {
+      //   setError(error.message);
+      // });
   };
 
   const handleRemovePlayer = (playerId) => {
