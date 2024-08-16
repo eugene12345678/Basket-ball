@@ -13,7 +13,7 @@ const App1 = () => {
   const [view, setView] = useState('players'); // 'players' or 'myTeam'
 
   useEffect(() => {
-    fetch('http://localhost:3000/players')
+    fetch('https://basketmania-backend.vercel.app/players')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -32,7 +32,7 @@ const App1 = () => {
   }, []);
 
   useEffect(() => {
-    fetch('http://localhost:3001/my_team')
+    fetch('https://team-backend-delta.vercel.app/my_team')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -53,7 +53,7 @@ const App1 = () => {
   };
 
   const handleAddPlayer = (player) => {
-    fetch('http://localhost:3001/my_team', {
+    fetch('https://team-backend-delta.vercel.app/my_team', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ const App1 = () => {
     // Optimistically remove the player from the UI
     setMyTeam(prevTeam => prevTeam.filter(player => player.player_id !== playerId));
 
-    fetch(`http://localhost:3001/my_team/${playerId}`, {
+    fetch(`https://team-backend-delta.vercel.app/my_team/${playerId}`, {
       method: 'DELETE',
     })
       .then(response => {

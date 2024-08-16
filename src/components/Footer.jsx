@@ -21,21 +21,21 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="" alt="Facebook" />
+            <img src="https://static-00.iconduck.com/assets.00/facebook-icon-512x512-25vt459e.png" alt="Facebook" />
           </a>
           <a
             href="https://twitter.com/BasketMania"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="" alt="Twitter" />
+            <img src="https://cdn.punchng.com/wp-content/uploads/2023/07/24084806/Twitter-new-logo.jpeg" alt="Twitter" />
           </a>
           <a
             href="https://instagram.com/BasketMania"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="" alt="Instagram" />
+            <img src="https://static-00.iconduck.com/assets.00/instagram-icon-512x512-l3atlqpl.png" alt="Instagram" />
           </a>
         </div>
         <div className="footer-legal">

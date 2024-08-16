@@ -11,7 +11,7 @@ const fixtures = [
     awayTeam: { name: "Phoenix Suns", logo: "https://wallpapers.com/images/hd/phoenix-suns-on-metal-screen-mesh-t7deflifg8y3uopp.jpg" },
     time: "14:00",
   },
-  // Add more fixtures as needed
+  
 ];
 
 const Fixtures = () => {
